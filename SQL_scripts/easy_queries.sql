@@ -6,12 +6,12 @@ FROM student AS s
 GROUP BY a.city_name
 ORDER BY count_students DESC;
 
--- вывести по каждому предмету за каждый год количество раз, сколько этот предмет сдавали
-SELECT date_part('year', aed.exam_date) AS year_of_exam,
-       s.subject_name,
-       COUNT(s.subject_name)            AS count_of_subjects
-FROM timetable AS t
-         JOIN annualexamdata aed on t.annual_exam_id = aed.id
-         JOIN subject s on aed.subject_id = s.id
-GROUP BY year_of_exam, subject_name
-ORDER BY year_of_exam, subject_name;
+
+-- вывести вывести первые 5 городов, где работает наибольшее количество учителей
+SELECT a.city_name, COUNT(t.first_name) AS count_of_teachers
+FROM teacher AS t
+         JOIN school s ON t.school_id = s.id
+         JOIN address a on s.address_id = a.id
+GROUP BY a.city_name
+ORDER BY count_of_teachers DESC
+LIMIT 5;
