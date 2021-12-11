@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@EvilMurlok 
-EvilMurlok
-/
-VK_python_backend
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-VK_python_backend/.gitignore
-@EvilMurlok
-EvilMurlok fix celery in .gitignore
-Latest commit 58f7bc5 1 hour ago
- History
- 1 contributor
-200 lines (154 sloc)  3.49 KB
-   
-
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,jetbrains+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,jetbrains+all
 
