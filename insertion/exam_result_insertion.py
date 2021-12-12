@@ -1,4 +1,4 @@
-from .database import DAYS_RESULT, RANDOM_RESULTS
+from insertion.database import DAYS_RESULT, RANDOM_RESULTS
 
 
 def result_insertion(connection):

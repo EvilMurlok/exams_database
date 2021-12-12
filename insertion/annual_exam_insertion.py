@@ -1,7 +1,7 @@
 import json
 
-from .database import ANNUAL_EXAM_DATA
-from .database import EXAM_DATES
+from insertion.database import ANNUAL_EXAM_DATA
+from insertion.database import EXAM_DATES
 
 
 def annual_exam_insertion(connection):

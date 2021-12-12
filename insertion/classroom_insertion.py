@@ -1,6 +1,6 @@
 from random import choice
 
-from .database import CLASSROOMS
+from insertion.database import CLASSROOMS
 
 
 def classroom_insertion(connection, classrooms_per_school=15):

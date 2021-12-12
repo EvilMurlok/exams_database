@@ -1,6 +1,7 @@
 from random import randint, choice
 from collections import defaultdict
-from .database import DESK_NUMBERS
+
+from insertion.database import DESK_NUMBERS
 
 
 def last_element(lst, item):

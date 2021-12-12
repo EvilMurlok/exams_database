@@ -1,4 +1,4 @@
-from .database import SUBJECTS
+from insertion.database import SUBJECTS
 
 
 def subject_insertion(connection):

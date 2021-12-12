@@ -1,16 +1,16 @@
 import psycopg2
 
 from local_settings import DATABASE, USER, PASSWORD, HOST, PORT
-from .address_insertion import address_insertion
-from .address_insertion import address_school_insertion
-from .school_insertion import school_insertion
-from .student_insertion import student_insertion
-from .subject_insertion import subject_insertion
-from .classroom_insertion import classroom_insertion
-from .teacher_insertion import teacher_insertion
-from .annual_exam_insertion import annual_exam_insertion
-from .timetable_insertion import timetable_insertion
-from .exam_result_insertion import result_insertion
+from insertion.address_insertion import address_insertion
+from insertion.address_insertion import address_school_insertion
+from insertion.school_insertion import school_insertion
+from insertion.student_insertion import student_insertion
+from insertion.subject_insertion import subject_insertion
+from insertion.classroom_insertion import classroom_insertion
+from insertion.teacher_insertion import teacher_insertion
+from insertion.annual_exam_insertion import annual_exam_insertion
+from insertion.timetable_insertion import timetable_insertion
+from insertion.exam_result_insertion import result_insertion
 
 con = psycopg2.connect(
     database=DATABASE,

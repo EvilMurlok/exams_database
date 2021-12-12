@@ -66,7 +66,10 @@ def get_random_date_result(date_exam):
 
 def ger_random_result(subject):
     available_subject_points = AVAILABLE_POINTS[subject]
-    json_result = {task: randint(0, max_points) for task, max_points in available_subject_points.items()}
+    if randint(0, 1):
+        json_result = {task: randint(randint(1, max_points), max_points) for task, max_points in available_subject_points.items()}
+    else:
+        json_result = {task: randint(randint(0, max_points), max_points) for task, max_points in available_subject_points.items()}
     sum_primary_score = sum(json_result.values())
     return json.dumps(json_result), sum_primary_score, TRANSFER_OF_POINTS[subject][sum_primary_score]
 

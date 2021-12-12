@@ -1,7 +1,7 @@
 from random import choice, randint
 
-from .database import FIRST_FEMALE_NAMES, SECOND_FEMALE_NAMES, FEMALE_PATRONYMICS
-from .database import FIRST_MALE_NAMES, SECOND_MALE_NAMES, MALE_PATRONYMICS
+from insertion.database import FIRST_FEMALE_NAMES, SECOND_FEMALE_NAMES, FEMALE_PATRONYMICS
+from insertion.database import FIRST_MALE_NAMES, SECOND_MALE_NAMES, MALE_PATRONYMICS
 
 
 def teacher_insertion(connection, teachers_per_school=3):

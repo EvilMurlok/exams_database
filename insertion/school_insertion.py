@@ -1,6 +1,6 @@
 from random import choice
 
-from .database import MOSCOW_SCHOOLS, NOT_MOSCOW_SCHOOLS
+from insertion.database import MOSCOW_SCHOOLS, NOT_MOSCOW_SCHOOLS
 
 
 def school_insertion(connection, id_start=201, id_stop=241):

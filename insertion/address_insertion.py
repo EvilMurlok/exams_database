@@ -1,6 +1,6 @@
 from random import choice, randint
 
-from .database import CITIES, STREETS, HOUSES, HOUSINGS, FLATS
+from insertion.database import CITIES, STREETS, HOUSES, HOUSINGS, FLATS
 
 
 def address_insertion(connection, number=200):

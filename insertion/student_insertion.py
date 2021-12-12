@@ -1,9 +1,9 @@
 from random import randint, choice
 from copy import copy
 
-from .database import FIRST_FEMALE_NAMES, SECOND_FEMALE_NAMES, FEMALE_PATRONYMICS
-from .database import FIRST_MALE_NAMES, SECOND_MALE_NAMES, MALE_PATRONYMICS
-from .database import CITIES, BIRTHDAYS, PASSPORT_NUMBERS, PASSPORT_SERIES
+from insertion.database import FIRST_FEMALE_NAMES, SECOND_FEMALE_NAMES, FEMALE_PATRONYMICS
+from insertion.database import FIRST_MALE_NAMES, SECOND_MALE_NAMES, MALE_PATRONYMICS
+from insertion.database import CITIES, BIRTHDAYS, PASSPORT_NUMBERS, PASSPORT_SERIES
 
 
 def student_insertion(connection, number=200):
